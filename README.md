@@ -1,8 +1,8 @@
 [![Build Status](https://dev.azure.com/mimblewimble/grin-miner/_apis/build/status/mimblewimble.grin-miner?branchName=master)](https://dev.azure.com/mimblewimble/grin-miner/_build/latest?definitionId=5&branchName=master)
 
-# Grin Miner
+# MWC Miner
 
-A standalone mining implementation intended for mining Grin against a running Grin node.
+A standalone mining implementation intended for mining MWC against a running MWC node.
 
 ## Supported Platforms
 
@@ -21,8 +21,8 @@ And a [running Grin node](https://github.com/mimblewimble/grin/blob/master/doc/b
 ## Build steps
 
 ```sh
-git clone https://github.com/mimblewimble/grin-miner.git
-cd grin-miner
+git clone https://github.com/mimblewimble/mwc-miner.git
+cd mwc-miner
 git submodule update --init
 cargo build
 ```
@@ -62,7 +62,7 @@ See [Troubleshooting](https://github.com/mimblewimble/docs/wiki/Troubleshooting)
 
 A successful build gets you:
 
- - `target/debug/grin-miner` - the main grin-miner binary
+ - `target/debug/mwc-miner` - the main grin-miner binary
  - `target/debug/plugins/*` - mining plugins
 
 Make sure you always run grin-miner within a directory that contains a
@@ -74,7 +74,7 @@ While testing, put the grin-miner binary on your path like this:
 export PATH=/path/to/grin-miner/dir/target/debug:$PATH
 ```
 
-You can then run `grin-miner` directly.
+You can then run `mwc-miner` directly.
 
 # Configuration
 
@@ -85,6 +85,6 @@ options, and should be the first point of reference.
 You should always ensure that this file exists in the directory from which you're
 running grin-miner.
 
-# Using grin-miner
+# Using mwc-miner
 
-There is a [Grin forum post](https://www.grin-forum.org/t/how-to-mine-cuckoo-30-in-grin-help-us-test-and-collect-stats/152) with further detail on how to configure grin-miner and mine grin's testnet.
+There is a [Grin forum post](https://www.grin-forum.org/t/how-to-mine-cuckoo-30-in-grin-help-us-test-and-collect-stats/152) with further detail on how to configure mwc-miner and mine mwc's testnet.
